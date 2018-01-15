@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0}
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        .calendar{
+            width: 462px;
+            margin: 50px auto;    
+        }
+        .calendar .myCalendar{
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .calendar  table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar td,th{
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            border: 3px solid #eee;
+            text-align: center;
+        }
+        .calendar caption{
+            font-size: 30px;
+        }
+        .calendar .prevDay, .calendar .nextDay{
+            background-color: #ffffff;
+            color: pink;
+        }
+        .calendar .currentDay{
+            background-color: #504b4b;
+            color: pink;
+        }
+       
+        .calendar .today{
+            background-color: pink;
+            color: #fff;
+        }
+        .calendar .title{
+            background-color: #ffffff;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .calendar .lastBtn{
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+        .calendar .yearMonth{
+            float: left;
+            width: 402px;
+            height: 30px;
+            text-align: center;
+            background-color:#dfdfdf;
+        }
+        .calendar .nextBtn{
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+        .calendar .yearMonth button{
+            height: 30px;
+            padding: 5px 10px;
+            font-size: 16px;
+            line-height: 15px;
+        }
+        .calendar .yearView{
+            width: 462px;
+            text-align: center;
+        }
+        .calendar .yearView td:hover{
+            background-color: #504b4b;
+            color: pink;
+        }
+        .calendar .allMonth td:hover{
+            background-color: pink;
+            color: #fff;
+        }
+    </style>
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="./dist/all.js"></script>
+</body>
+</html>
